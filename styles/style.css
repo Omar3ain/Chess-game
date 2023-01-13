@@ -152,7 +152,7 @@ body{
     left: 0;
 }
 .number , .letter ,.pos_appear{ pointer-events: none; }
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .game{
         display: flex;
         flex-direction: column;
