@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javascript/chessGame.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chess game</title>
+</head>
+<body>
+    
+    <div class="game">
+        <h1>Chess's Vision Game</h1>
+    <div class="chess_board">
+        <span class="pos_appear"></span>
+        <div class="row odd 8">
+            <div class="a cell "><span class="number">8</span></div>
+            <div class="b cell color"></div>
+            <div class="c cell "></div>
+            <div class="d cell color"></div>
+            <div class="e cell"></div>
+            <div class="f cell color"></div>
+            <div class="g cell"></div>  
+            <div class="h cell color"></div>
+        </div>
+        <div class="row even 7">
+            <div class="a cell color"><span class="number">7</span></div>
+            <div class="b cell"></div>
+            <div class="c cell color"></div>
+            <div class="d cell"></div>
+            <div class="e cell color"></div>
+            <div class="f cell"></div>
+            <div class="g cell color"></div>
+            <div class="h cell"></div>
+        </div>
+        <div class="row odd 6">
+            <div class="a cell "><span class="number">6</span></div>
+            <div class="b cell color"></div>
+            <div class="c cell "></div>
+            <div class="d cell color"></div>
+            <div class="e cell"></div>
+            <div class="f cell color"></div>
+            <div class="g cell"></div>  
+            <div class="h cell color"></div>
+        </div>
+        <div class="row even 5">
+            <div class="a cell color"><span class="number">5</span></div>
+            <div class="b cell"></div>
+            <div class="c cell color"></div>
+            <div class="d cell"></div>
+            <div class="e cell color"></div>
+            <div class="f cell"></div>
+            <div class="g cell color"></div>
+            <div class="h cell"></div>
+        </div>
+        <div class="row odd 4">
+            <div class="a cell "><span class="number">4</span></div>
+            <div class="b cell color"></div>
+            <div class="c cell "></div>
+            <div class="d cell color"></div>
+            <div class="e cell"></div>
+            <div class="f cell color"></div>
+            <div class="g cell"></div>  
+            <div class="h cell color"></div>
+        </div>
+        <div class="row even 3">
+            <div class="a cell color"><span class="number">3</span></div>
+            <div class="b cell"></div>
+            <div class="c cell color"></div>
+            <div class="d cell"></div>
+            <div class="e cell color"></div>
+            <div class="f cell"></div>
+            <div class="g cell color"></div>
+            <div class="h cell"></div>
+        </div>
+        <div class="row odd 2">
+            <div class="a cell "><span class="number">2</span></div>
+            <div class="b cell color"></div>
+            <div class="c cell "></div>
+            <div class="d cell color"></div>
+            <div class="e cell"></div>
+            <div class="f cell color"></div>
+            <div class="g cell"></div>  
+            <div class="h cell color"></div>
+        </div>
+        <div class="row even 1">
+            <div class="a cell color"><span class="number">1</span><span class="letter">a</span></div>
+            <div class="b cell"><span class="letter">b</span></div>
+            <div class="c cell color"><span class="letter">c</span></div>
+            <div class="d cell"><span class="letter">d</span></div>
+            <div class="e cell color"><span class="letter">e</span></div>
+            <div class="f cell"><span class="letter">f</span></div>
+            <div class="g cell color"><span class="letter">g</span></div>
+            <div class="h cell"><span class="letter">h</span></div>
+        </div>
+    </div>  
+    <div class="left_side">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Improve vision with coordinate training</li>
+                <li>Identify squares</li>
+                <li>Answer as many as you can in 30 seconds</li>
+            </ul>
+        </div>
+        <h1 class="score"></h1>
+        <div class="timer">
+            <p class="pos"></p>
+            <button class="start_time">Start The game !</button>
+            <div class="timer_clock"></div>
+        </div>  
+    </div>
+</div>
+</body>
+</html>
