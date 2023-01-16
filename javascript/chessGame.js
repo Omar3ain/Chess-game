@@ -8,6 +8,10 @@ const wanted_postion = document.querySelector('.pos');
 const score_number = document.querySelector('.score');
 const pos_appear = document.querySelector('.pos_appear');
 const instructions = document.querySelector('.instructions');
+const right_sound= document.querySelector('.correct');
+const wrong_sound= document.querySelector('.wrong');
+const last_5_sec= document.querySelector('.last-10-sec');
+const time_over= document.querySelector('.timer-over');
 let score =0;
 let counter=0;
 let game_started=false;
@@ -31,11 +35,13 @@ chessBoard.addEventListener('click' , (event) => {
             setTimeout(() => {
                 event.target.classList.remove('selected_right');
             }, 500);
+            right_sound.play();
         }else{
             event.target.classList.add('selected_wrong');
             setTimeout(() => {
                 event.target.classList.remove('selected_wrong');
             }, 500);
+            wrong_sound.play();
         }
         counter++;
         random_postion = get_random_postion();
@@ -67,13 +73,18 @@ timer_button.addEventListener('click',() => {
     instructions.classList.add('none');
     wanted_postion.classList.remove('none');
     timer_clock.classList.remove('none');
-   
     
     function countdown() {
         if (timeLeft == -1) {
             clearTimeout(timerId);
             game_time_finshed();
         } else {
+            if(timeLeft === 10) {
+                last_5_sec.play()
+            }
+            if(timeLeft === 0 ){
+                time_over.play();
+            }
             timer_clock.innerHTML = timeLeft + ' seconds remaining';
             timeLeft--;
         }
@@ -87,5 +98,4 @@ let game_time_finshed = () => {
     timer_button.classList.remove('none');
     instructions.classList.remove('none');
 }
-    
 

@@ -131,6 +131,7 @@ body{
 }
 .instructions>ul>li{
     list-style: none;
+    font-size: 1.3vw;
 }
 
 .instructions>ul>li:nth-child(1):before{
